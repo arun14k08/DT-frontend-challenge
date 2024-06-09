@@ -20,3 +20,7 @@
     npm install
     npm run dev
     ```
+
+Open the browser and go to http://localhost/ to preview the output
+
+For any queries Contact: +918438642183
