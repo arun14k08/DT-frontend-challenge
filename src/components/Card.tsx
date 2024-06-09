@@ -1,5 +1,8 @@
 import React from "react";
 import { InfoIcon } from "../assets/SVGAsstes";
+import ArticleInput from "./ArticleInput";
+import ArticleDisplay from "./ArticleDisplay";
+import ThreadBuilder from "./ThreadBuilder";
 
 const Card = ({ data }) => {
     return (
@@ -25,6 +28,18 @@ const Card = ({ data }) => {
                             className="w-full min-h-[291px]"
                         ></iframe>
                     )}
+                    {data.asset_type === "input_asset" &&
+                        data.asset_content_type === "threadbuilder" && (
+                            <ThreadBuilder />
+                        )}
+                    {data.asset_type === "input_asset" &&
+                        data.asset_content_type === "article" && (
+                            <ArticleInput />
+                        )}
+                    {data.asset_type === "display_asset" &&
+                        data.asset_content_type === "article" && (
+                            <ArticleDisplay />
+                        )}
                 </section>
             </div>
         </div>

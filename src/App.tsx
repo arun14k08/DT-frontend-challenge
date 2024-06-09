@@ -12,7 +12,7 @@ const App = () => {
         setIsBoardOpen(!isBoardOpen);
     };
     return (
-        <div onClick={(ev) => toggleBoardOpen(ev, "outer")}>
+        <div onClick={(ev) => toggleBoardOpen(ev, "outer")} className="pb-[191px]">
             <header>
                 <Navbar />
             </header>

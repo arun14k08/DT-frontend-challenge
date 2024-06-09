@@ -103,3 +103,73 @@ export const InfoIcon = () => {
         </svg>
     );
 };
+
+export const UndoIcon = () => {
+    return (
+        <svg
+            width="21"
+            height="18"
+            viewBox="0 0 21 18"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                d="M7.79978 3.1501L3.15002 7.13561M3.15002 7.13561L7.79978 11.1211M3.15002 7.13561L13.85 7.13561C16.0592 7.13561 17.85 8.92647 17.85 11.1356V14.8501"
+                stroke="#616161"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+        </svg>
+    );
+};
+
+export const RedoIcon = () => {
+    return (
+        <svg
+            width="19"
+            height="19"
+            viewBox="0 0 19 19"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                d="M11.9431 3.32505L16.15 7.53197M16.15 7.53197L11.9431 11.7389M16.15 7.53197H6.85003C4.64089 7.53197 2.85003 9.32284 2.85003 11.532V15.675"
+                stroke="#616161"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+        </svg>
+    );
+};
+
+export const ExpandIcon = () => {
+    return (
+        <svg
+            width="19"
+            height="19"
+            viewBox="0 0 19 19"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                d="M11.5961 1.8999H17.0995M17.0995 1.8999V7.40335M17.0995 1.8999L11.5961 7.40335M7.40397 17.0999H1.90052M1.90052 17.0999V11.5964M1.90052 17.0999L7.60052 11.3999M17.1 11.596V17.0994M17.1 17.0994H11.5966M17.1 17.0994L11.5966 11.596M1.90002 7.40385L1.90002 1.9004M1.90002 1.9004L7.40348 1.9004M1.90002 1.9004L7.60002 7.6004"
+                stroke="#616161"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            />
+        </svg>
+    );
+};
+
+export const MenuHorizontalIcon = () => {
+    return (
+        <div className="flex gap-[2px] items-center">
+            <div className="size-[5px] bg-[#616161] rounded-full">&nbsp;</div>
+            <div className="size-[5px] bg-[#616161] rounded-full">&nbsp;</div>
+            <div className="size-[5px] bg-[#616161] rounded-full">&nbsp;</div>
+        </div>
+    );
+};
