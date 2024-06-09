@@ -6,7 +6,7 @@ const Board = ({ isOpen, toggleOpen }) => {
     return (
         <div
         onClick={(ev) => toggleOpen(ev, "inner")}
-            className={`${isOpen ? "max-w-[392px] " : "max-w-[132px]"} cursor-pointer transition-all fixed top-[108px] left-0`}
+            className={`${isOpen ? "max-w-[392px] " : "max-w-[132px]"} cursor-pointer transition-all fixed top-[108px] left-0 z-[9999]`}
         >
             <div className="bg-black rounded-3xl min-h-[50px] rounded-l-none rounded-br-none py-[14px] pl-[18px] text-white">
                 {!isOpen ?? (
@@ -14,7 +14,7 @@ const Board = ({ isOpen, toggleOpen }) => {
                 )}
             </div>
 
-            <div className="py-[20px] px-8 shadow-[rgba(0,0,0,0.25)] shadow-lg rounded-3xl rounded-t-none h-[692px]">
+            <div className="py-[20px] px-8 shadow-[rgba(0,0,0,0.25)] shadow-lg rounded-3xl rounded-t-none h-[692px] bg-white">
                 {isOpen ? (
                     <div>
                         <ul className="list-disc">
